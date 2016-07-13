@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--remember to go back and download actual files for this at http://google.github.io/material-design-icons/-->
+	<link href="assets/global/css/foundation/css/foundation.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href="assets/global/css/app.css" rel="stylesheet" type="text/css">
+	<link href="assets/todo/css/todo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+	<div class="header-left"><i class="material-icons">gesture</i><h4>unid</h4></div>
+	<div class="header-right">
+		<a href="#"><i class="material-icons">menu</i></a>
+	</div>
+</header>
+<section class="content">
+	<div class="sidebar">
+		<ul>
+			<li><a name="delete" id="delete-finished" href="#delete">DELETE FINISHED</a></li>
+			<li><a id="undo" href="#">UNDO</a></li>
+		</ul>
+	</div>
+	<div class="list-container">
+		<div id="check-all-container">
+			<input id="check-all" type="checkbox">
+			<h4>Select All</h4>
+		</div>
+		<ul id="todo-view"></ul>
+		<div class="input">
+			<form>
+				<input id="todo-item" type="text" placeholder="Enter your tasks here...">
+				<input id="submit-item" type="submit" value="add">
+			</form>
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="assets/global/scripts/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="assets/todo/scripts/todo.js"></script>
+</body>
+</html>

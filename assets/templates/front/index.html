@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--remember to go back and download actual files for this at http://google.github.io/material-design-icons/-->
+	<link href="../../assets/css/global/foundation/css/foundation.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href="../../assets/css/global/app.css" rel="stylesheet" type="text/css">
+	<link href="../../assets/css/front/front.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    	<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+    		<button class="close-button" aria-label="Close menu" type="button" data-close>
+          	<span aria-hidden="false">&times;</span>
+        	</button>
+        	<ul class="vertical menu">
+        	<li><a href="/">Home</a></li>
+	          <li><a href="/todo">TODO List</a></li>
+	          <li><a href="/logout">Logout</a></li>
+	        </ul>
+    	</div>
+      	<div class="off-canvas-content" data-off-canvas-content>
+      		<header class="front-page">
+				<div class="header-left">
+					<a href="/">
+						<i class="material-icons">gesture</i>
+						<h4>UNiD</h4>
+					</a>
+				</div>
+				<div class="header-right">
+					<!-- <a href="#" data-toggle="offCanvasRight"><i class="material-icons">menu</i></a> -->
+				</div>
+			</header>
+			<section class="front-page_hero">
+				<div class="front-page_hero_text">
+					<ul id="example-tabs" class="tabs" data-tabs>
+						<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Sign In</a></li>
+						<li class="tabs-title"><a href="#panel2">Register</a></li>
+					</ul>
+					<div class="tabs-content" data-tabs-content="example-tabs">
+						<div class="tabs-panel is-active" id="panel1">
+							<form action="http://localhost:8080/api/authenticate" method="post">
+								<input name="name" type="text" placeholder="USERNAME">
+								<input name="password" type="password" placeholder="PASSWORD">
+								<input value="LOG IN" type="submit">
+							</form>
+						</div>
+						<div class="tabs-panel" id="panel2">
+							<form action="http://localhost:8080/signup" method="post">
+								<input name="name" type="text" placeholder="USERNAME">
+								<input name="password" type="password" placeholder="PASSWORD">
+								<input name="email" type="text" placeholder="EMAIL ADDRESS">
+								<input name="firstname" type="text" placeholder="FIRST NAME">
+								<input name="lastname" type="text" placeholder="LAST NAME">
+								<input value="REGISTER" type="submit">
+							</form>
+						</div>
+					</div>
+
+					<!-- <h2>Maximize Project Efficiency</h2>
+					<div>
+						<p> UNID is a project management tool designed to place everything you need directly in front of you. UNID is simple to use, and can be customized to fit your needs.</p>
+					</div> -->
+				</div>
+			</section>
+      	</div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../assets/scripts/global/foundation/js/vendor/jquery.js"></script>
+<script type="text/javascript" src="../../assets/scripts/global/foundation/js/vendor/what-input.js"></script>
+<script type="text/javascript" src="../../assets/scripts/global/foundation/js/vendor/foundation.min.js"></script>
+<script type="text/javascript" src="../../assets/scripts/global/foundation/js/app.js"></script>
+<script type="text/javascript" src="../../node_modules/angular/angular.js"></script>
+</body>
+</html>

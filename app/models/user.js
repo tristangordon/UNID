@@ -6,12 +6,32 @@ var bcrypt = require('bcrypt');
  
 // set up a mongoose model
 var UserSchema = new Schema({
-  name: {
+    name: {
         type: String,
         unique: true,
         required: true
     },
-  password: {
+    email: {
+        type: String,
+        unique: true,
+        validate: {
+          validator: function(v) {
+            return /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i
+.test(v);
+          },
+          message: '"{VALUE}" is not a valid email address!'  
+        },
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    firstname : {
+        type: String,
+        required: true
+    },
+    lastname : {
         type: String,
         required: true
     }

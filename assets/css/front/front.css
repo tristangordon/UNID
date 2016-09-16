@@ -1,0 +1,133 @@
+.front-page_hero {
+	background: 
+		linear-gradient(
+	      rgba(0, 0, 0, 0.5), 
+	      rgba(0, 0, 0, 0.5)
+	    ),
+		url(../../img/global/largecanyon.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	width: 100%;
+	height: 100vh;
+	background-attachment: fixed;
+}
+
+.front-page_hero_text {
+	top: 150px;
+	position: relative;
+	padding: 25px 35px;
+	text-align: center;
+	color: black;
+	max-width: 320px;
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 1) none repeat scroll 0% 0%;
+}
+
+.front-page_hero_text input[type='text'],
+.front-page_hero_text input[type='password'] {
+	background-color: transparent !important;
+	border: none;
+	box-shadow: none;
+	border-bottom: #ccc 1px solid;
+	height: 50px;
+	color: black;
+	text-align: center;
+}
+
+.front-page_hero_text input[type='submit'] {
+	width: 90px;
+	height: 100%;
+	background: #91A8d0;
+	border: none;
+	height: 40px;
+	transition: linear .2s;
+	text-align: center;
+	position: relative;
+	right: 0;
+	border-bottom: 4px solid #eec550;
+	color: white;
+}
+
+.front-page_hero_text a:hover,
+.front-page_hero_text input[type="submit"]:hover {
+	opacity: .5;
+}
+
+input[type='text']::-webkit-input-placeholder,
+input[type='password']::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+  opacity: .8;
+}
+input[type='text']::-moz-placeholder,
+input[type='password']::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+  opacity: .8;
+}
+input[type='text']:-ms-input-placeholder,
+input[type='password']:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+  opacity: .8;
+}
+input[type='text']:-moz-placeholder,
+input[type='password']:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+  opacity: .8;
+}
+
+/*.front-page_hero_text div {
+	
+	max-width: 700px;
+	width: 100%;
+	height: 200px;
+	margin: 0 auto 0;
+}
+
+.front-page_hero_text div p {
+	font-size: 20px;
+	color: white;
+	margin-top: 50px;
+}*/
+
+header.front-page {
+	background: transparent;
+	margin-bottom: -62px;
+}
+
+.tabs-title a:hover {
+	opacity: 1;
+	color: #eec550;
+}
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true']::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    color: #eec550;
+    font-weight: bold;
+}
+
+.tabs-title > a {
+	overflow:hidden;
+	position: relative;
+} 
+
+.tabs-title > a::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #eec550;
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: translate3d(150%,0,0);
+    transform: translate3d(150%,0,0);
+}
+
+/*header.fade-in {
+	background:  #91A8d0;;
+}
+*/
